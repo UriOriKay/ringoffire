@@ -1,5 +1,5 @@
 export class Game {
-    public players:string[] = [];
+    public players:string[] = ['Hans', 'Peter', 'Werner', 'Franz'];
     public stack:string[] = [];
     public playedCards: string[] = [];
     public currentPlayer: number = 0;
@@ -22,7 +22,7 @@ function shuffle(array:string[]) {
     while(0 !== currentIndex) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
-        
+
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;

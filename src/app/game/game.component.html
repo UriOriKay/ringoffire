@@ -1,4 +1,4 @@
-<app-player></app-player>
+<app-player class="player-position" *ngFor="let player of game.players; let i = index" [ngStyle]="{'top.px': 100 +(i * 120)}" style="top: 130px" [name]="player" ></app-player>
 
 <div class="field">
     <div class="card-stack">
